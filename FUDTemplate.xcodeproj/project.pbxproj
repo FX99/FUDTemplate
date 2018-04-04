@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		174058A0206E41C90083EB2D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1740589F206E41C90083EB2D /* AppDelegate.m */; };
 		174058A8206E41C90083EB2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 174058A7206E41C90083EB2D /* Assets.xcassets */; };
-		174058AB206E41C90083EB2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174058A9206E41C90083EB2D /* LaunchScreen.storyboard */; };
 		174058AE206E41C90083EB2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 174058AD206E41C90083EB2D /* main.m */; };
 		174058B6206E428D0083EB2D /* FUDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 174058B5206E428D0083EB2D /* FUDBaseViewController.m */; };
 		17DF4DD02074B65600833F66 /* FUDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DF4DCF2074B65600833F66 /* FUDLoginViewController.m */; };
@@ -21,7 +20,6 @@
 		1740589E206E41C90083EB2D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1740589F206E41C90083EB2D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		174058A7206E41C90083EB2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		174058AA206E41C90083EB2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		174058AC206E41C90083EB2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		174058AD206E41C90083EB2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		174058B4206E428D0083EB2D /* FUDBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUDBaseViewController.h; sourceTree = "<group>"; };
@@ -71,7 +69,6 @@
 				17DF4DD12074B68700833F66 /* FUDRegisterViewController.h */,
 				17DF4DD22074B68700833F66 /* FUDRegisterViewController.m */,
 				174058A7206E41C90083EB2D /* Assets.xcassets */,
-				174058A9206E41C90083EB2D /* LaunchScreen.storyboard */,
 				174058AC206E41C90083EB2D /* Info.plist */,
 				174058AD206E41C90083EB2D /* main.m */,
 			);
@@ -136,7 +133,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				174058AB206E41C90083EB2D /* LaunchScreen.storyboard in Resources */,
 				174058A8206E41C90083EB2D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,17 +153,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		174058A9206E41C90083EB2D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				174058AA206E41C90083EB2D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		174058AF206E41C90083EB2D /* Debug */ = {
@@ -278,6 +263,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5AR95QDSAR;
 				INFOPLIST_FILE = FUDTemplate/Info.plist;
@@ -293,6 +279,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5AR95QDSAR;
 				INFOPLIST_FILE = FUDTemplate/Info.plist;
