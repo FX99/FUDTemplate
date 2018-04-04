@@ -10,4 +10,7 @@
 
 @interface FUDBaseViewController : UIViewController
 
+// 是否使用默认的左侧导航栏按钮
+@property (nonatomic, readonly) BOOL enableDefaultLeftNavigationBarButton;
+
 @end
