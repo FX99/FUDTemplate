@@ -16,4 +16,7 @@
 // 是否隐藏导航栏
 @property (nonatomic, readonly) BOOL prefersNavigationBarHidden;
 
+// 是否启用侧滑返回
+@property (nonatomic, readonly) BOOL enablePopGesture;
+
 @end

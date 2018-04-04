@@ -7,6 +7,7 @@
 //
 
 #import "FUDBaseNavigationController.h"
+#import "FUDBaseViewController.h"
 
 @interface FUDBaseNavigationController () <UIGestureRecognizerDelegate, UINavigationControllerDelegate>
 
@@ -22,7 +23,12 @@
 }
 
 - (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
-    self.interactivePopGestureRecognizer.enabled = self.viewControllers.count > 1;
+    if ([viewController isKindOfClass:[FUDBaseViewController class]]) {
+        FUDBaseViewController *baseViewController = (FUDBaseViewController *)viewController;
+        self.interactivePopGestureRecognizer.enabled = self.viewControllers.count > 1 && baseViewController.enablePopGesture;
+    } else {
+        self.interactivePopGestureRecognizer.enabled = self.viewControllers.count > 1;
+    }
 }
 
 @end

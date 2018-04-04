@@ -56,4 +56,8 @@
     return NO;
 }
 
+- (BOOL)enablePopGesture {
+    return YES;
+}
+
 @end
