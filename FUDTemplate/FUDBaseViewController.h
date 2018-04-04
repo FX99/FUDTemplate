@@ -13,4 +13,7 @@
 // 是否使用默认的左侧导航栏按钮
 @property (nonatomic, readonly) BOOL enableDefaultLeftNavigationBarButton;
 
+// 是否隐藏导航栏
+@property (nonatomic, readonly) BOOL prefersNavigationBarHidden;
+
 @end

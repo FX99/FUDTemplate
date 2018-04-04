@@ -27,6 +27,10 @@
     [self.view addSubview:registerButton];
 }
 
+- (BOOL)prefersNavigationBarHidden {
+    return YES;
+}
+
 - (void)registerButtonHandler {
     FUDRegisterViewController *registerVC = [[FUDRegisterViewController alloc] init];
     [self.navigationController pushViewController:registerVC animated:YES];

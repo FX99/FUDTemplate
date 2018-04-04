@@ -24,6 +24,12 @@
     }
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self.navigationController setNavigationBarHidden:self.prefersNavigationBarHidden animated:YES];
+}
+
 - (BOOL)enableDefaultLeftNavigationBarButton {
     return YES;
 }
@@ -44,6 +50,10 @@
 
 - (void)cancelButtonHandler {
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (BOOL)prefersNavigationBarHidden {
+    return NO;
 }
 
 @end
