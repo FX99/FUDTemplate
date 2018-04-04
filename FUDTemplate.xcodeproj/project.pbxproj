@@ -13,6 +13,7 @@
 		174058B6206E428D0083EB2D /* FUDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 174058B5206E428D0083EB2D /* FUDBaseViewController.m */; };
 		17DF4DD02074B65600833F66 /* FUDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DF4DCF2074B65600833F66 /* FUDLoginViewController.m */; };
 		17DF4DD32074B68700833F66 /* FUDRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DF4DD22074B68700833F66 /* FUDRegisterViewController.m */; };
+		17DF4DD62074C6AA00833F66 /* FUDBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DF4DD52074C6AA00833F66 /* FUDBaseNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		17DF4DCF2074B65600833F66 /* FUDLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUDLoginViewController.m; sourceTree = "<group>"; };
 		17DF4DD12074B68700833F66 /* FUDRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUDRegisterViewController.h; sourceTree = "<group>"; };
 		17DF4DD22074B68700833F66 /* FUDRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUDRegisterViewController.m; sourceTree = "<group>"; };
+		17DF4DD42074C6AA00833F66 /* FUDBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUDBaseNavigationController.h; sourceTree = "<group>"; };
+		17DF4DD52074C6AA00833F66 /* FUDBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUDBaseNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,8 @@
 				1740589F206E41C90083EB2D /* AppDelegate.m */,
 				174058B4206E428D0083EB2D /* FUDBaseViewController.h */,
 				174058B5206E428D0083EB2D /* FUDBaseViewController.m */,
+				17DF4DD42074C6AA00833F66 /* FUDBaseNavigationController.h */,
+				17DF4DD52074C6AA00833F66 /* FUDBaseNavigationController.m */,
 				17DF4DCE2074B65600833F66 /* FUDLoginViewController.h */,
 				17DF4DCF2074B65600833F66 /* FUDLoginViewController.m */,
 				17DF4DD12074B68700833F66 /* FUDRegisterViewController.h */,
@@ -144,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17DF4DD62074C6AA00833F66 /* FUDBaseNavigationController.m in Sources */,
 				174058B6206E428D0083EB2D /* FUDBaseViewController.m in Sources */,
 				174058AE206E41C90083EB2D /* main.m in Sources */,
 				17DF4DD02074B65600833F66 /* FUDLoginViewController.m in Sources */,
