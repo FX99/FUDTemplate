@@ -32,7 +32,7 @@
     if (self.navigationController) {
         if (self.navigationController.viewControllers.count > 1) {
             self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"navigationbar_back"] style:UIBarButtonItemStylePlain target:self action:@selector(backButtonHandler)];
-        } else {
+        } else if (self.navigationController.presentingViewController) {
             self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"取消" style:UIBarButtonItemStylePlain target:self action:@selector(cancelButtonHandler)];
         }
     }
