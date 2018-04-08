@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		173EEF0A207A170A00FE28D8 /* FUDGuidePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 173EEF09207A170A00FE28D8 /* FUDGuidePageViewController.m */; };
 		174058A0206E41C90083EB2D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1740589F206E41C90083EB2D /* AppDelegate.m */; };
 		174058A8206E41C90083EB2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 174058A7206E41C90083EB2D /* Assets.xcassets */; };
 		174058AE206E41C90083EB2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 174058AD206E41C90083EB2D /* main.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		173EEF08207A170A00FE28D8 /* FUDGuidePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUDGuidePageViewController.h; sourceTree = "<group>"; };
+		173EEF09207A170A00FE28D8 /* FUDGuidePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUDGuidePageViewController.m; sourceTree = "<group>"; };
 		1740589B206E41C90083EB2D /* FUDTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FUDTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1740589E206E41C90083EB2D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1740589F206E41C90083EB2D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -69,6 +72,8 @@
 				174058B5206E428D0083EB2D /* FUDBaseViewController.m */,
 				17DF4DD42074C6AA00833F66 /* FUDBaseNavigationController.h */,
 				17DF4DD52074C6AA00833F66 /* FUDBaseNavigationController.m */,
+				173EEF08207A170A00FE28D8 /* FUDGuidePageViewController.h */,
+				173EEF09207A170A00FE28D8 /* FUDGuidePageViewController.m */,
 				17DF4DCE2074B65600833F66 /* FUDLoginViewController.h */,
 				17DF4DCF2074B65600833F66 /* FUDLoginViewController.m */,
 				17DF4DD12074B68700833F66 /* FUDRegisterViewController.h */,
@@ -152,6 +157,7 @@
 				17DF4DD62074C6AA00833F66 /* FUDBaseNavigationController.m in Sources */,
 				174058B6206E428D0083EB2D /* FUDBaseViewController.m in Sources */,
 				174058AE206E41C90083EB2D /* main.m in Sources */,
+				173EEF0A207A170A00FE28D8 /* FUDGuidePageViewController.m in Sources */,
 				17DF4DD02074B65600833F66 /* FUDLoginViewController.m in Sources */,
 				174058A0206E41C90083EB2D /* AppDelegate.m in Sources */,
 				17DF4DD32074B68700833F66 /* FUDRegisterViewController.m in Sources */,

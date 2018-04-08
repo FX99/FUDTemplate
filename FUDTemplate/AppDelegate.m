@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "FUDLoginViewController.h"
 #import "FUDBaseNavigationController.h"
+#import "FUDGuidePageViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,8 +21,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     FUDLoginViewController *loginVC = [[FUDLoginViewController alloc] init];
     FUDBaseNavigationController *navigationController = [[FUDBaseNavigationController alloc] initWithRootViewController:loginVC];
+    
+    FUDGuidePageViewController *guideViewController = [[FUDGuidePageViewController alloc] init];
     self.window = [[UIWindow alloc] init];
-    self.window.rootViewController = navigationController;
+    self.window.rootViewController = guideViewController;
     [self.window makeKeyAndVisible];
     
     return YES;
