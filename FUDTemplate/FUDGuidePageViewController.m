@@ -12,10 +12,19 @@
 
 @end
 
+NSNotificationName const FUDGuidePageDidShowNotification = @"FUDGuidePageDidShowNotification";
+static NSString * const guidePageHasShownKey = @"FUDGuidePageViewControllerHasShown";
+
 @implementation FUDGuidePageViewController
+
++ (BOOL)hasShown {
+    return [[NSUserDefaults standardUserDefaults] boolForKey:guidePageHasShownKey];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:guidePageHasShownKey];
     
     CGFloat height = self.view.frame.size.height;
     CGFloat width  = self.view.frame.size.width;
@@ -49,7 +58,7 @@
 }
 
 - (void)buttonHandler {
-    
+    [[NSNotificationCenter defaultCenter] postNotificationName:FUDGuidePageDidShowNotification object:nil];
 }
 
 @end

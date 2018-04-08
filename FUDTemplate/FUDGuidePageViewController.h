@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+extern NSNotificationName const FUDGuidePageDidShowNotification;
+
 @interface FUDGuidePageViewController : UIViewController
+
++ (BOOL)hasShown;
 
 @end

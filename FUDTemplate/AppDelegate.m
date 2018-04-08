@@ -19,12 +19,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    FUDLoginViewController *loginVC = [[FUDLoginViewController alloc] init];
-    FUDBaseNavigationController *navigationController = [[FUDBaseNavigationController alloc] initWithRootViewController:loginVC];
-    
-    FUDGuidePageViewController *guideViewController = [[FUDGuidePageViewController alloc] init];
     self.window = [[UIWindow alloc] init];
-    self.window.rootViewController = guideViewController;
+    
+    [self registeServices];
+    [self managerRootViewController];
+    
     [self.window makeKeyAndVisible];
     
     return YES;
@@ -55,6 +54,21 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)registeServices {
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(managerRootViewController) name:FUDGuidePageDidShowNotification object:nil];
+}
+
+- (void)managerRootViewController {
+    if ([FUDGuidePageViewController hasShown]) {
+        FUDLoginViewController *loginVC = [[FUDLoginViewController alloc] init];
+        FUDBaseNavigationController *navigationController = [[FUDBaseNavigationController alloc] initWithRootViewController:loginVC];
+        self.window.rootViewController = navigationController;
+    } else {
+        FUDGuidePageViewController *guideViewController = [[FUDGuidePageViewController alloc] init];
+        self.window.rootViewController = guideViewController;
+    }
 }
 
 
