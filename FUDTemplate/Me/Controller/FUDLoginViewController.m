@@ -61,13 +61,16 @@
 
 - (void)loginButtonHandler {
     NSString *userName = @"fudo";
+    NSString *userID = @"00000001";
     NSString *token = @"I am token string";
     
-    [[NSUserDefaults standardUserDefaults] setValue:userName forKey:fud_userNameKey];
-    [[NSUserDefaults standardUserDefaults] setValue:token forKey:fud_tokenKey];
-    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:fud_isLoginKey];
+    NSDictionary *userInfo = @{fud_userNameKey: userName,
+                               fud_userIDKey: userID,
+                               fud_tokenKey: token,
+                               fud_loginStatusKey: @(FUDLoginStatusLoggedIn)
+                               };
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:FUDLoginStatusDidChangeNotification object:nil userInfo:@{fud_loginStatusKey: @0}];
+    [[NSNotificationCenter defaultCenter] postNotificationName:FUDLoginStatusDidChangeNotification object:nil userInfo:userInfo];
 }
 
 @end
