@@ -20,6 +20,7 @@
 		17ECD7C72091A6A100FDD163 /* FUDMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17ECD7C62091A6A100FDD163 /* FUDMeViewController.m */; };
 		17ECD7CB2091A72600FDD163 /* FUDDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17ECD7CA2091A72600FDD163 /* FUDDiscoverViewController.m */; };
 		17ECD7D02091AA4800FDD163 /* FUDAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17ECD7CF2091AA4800FDD163 /* FUDAccountManager.m */; };
+		17ECD7D52091E4FB00FDD163 /* UIImage+FUDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 17ECD7D42091E4FB00FDD163 /* UIImage+FUDColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,8 @@
 		17ECD7CE2091AA4800FDD163 /* FUDAccountManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUDAccountManager.h; sourceTree = "<group>"; };
 		17ECD7CF2091AA4800FDD163 /* FUDAccountManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUDAccountManager.m; sourceTree = "<group>"; };
 		17ECD7D12091AB4100FDD163 /* FUDTemplatePrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUDTemplatePrefixHeader.pch; sourceTree = "<group>"; };
+		17ECD7D32091E4FB00FDD163 /* UIImage+FUDColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FUDColor.h"; sourceTree = "<group>"; };
+		17ECD7D42091E4FB00FDD163 /* UIImage+FUDColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FUDColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,7 @@
 		1740589D206E41C90083EB2D /* FUDTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				17ECD7D22091E4B500FDD163 /* Category */,
 				17ECD7C12091A57F00FDD163 /* Application */,
 				17ECD7BD2091A3C700FDD163 /* BaseUI */,
 				17ECD7BE2091A3FF00FDD163 /* Home */,
@@ -168,6 +172,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		17ECD7D22091E4B500FDD163 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				17ECD7D32091E4FB00FDD163 /* UIImage+FUDColor.h */,
+				17ECD7D42091E4FB00FDD163 /* UIImage+FUDColor.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -238,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17ECD7CB2091A72600FDD163 /* FUDDiscoverViewController.m in Sources */,
+				17ECD7D52091E4FB00FDD163 /* UIImage+FUDColor.m in Sources */,
 				17DF4DD62074C6AA00833F66 /* FUDBaseNavigationController.m in Sources */,
 				174058B6206E428D0083EB2D /* FUDBaseViewController.m in Sources */,
 				17ECD7D02091AA4800FDD163 /* FUDAccountManager.m in Sources */,

@@ -18,6 +18,10 @@
     [super viewDidLoad];
     
     self.navigationItem.title = @"发现";
+    
+    self.navigationController.navigationBar.backgroundColor = [UIColor orangeColor];
+    UIImage *greenImage = [UIImage fud_imageWithColor:[UIColor greenColor]];
+    [self.navigationController.navigationBar setBackgroundImage:greenImage forBarMetrics:UIBarMetricsDefault];
 }
 
 @end
