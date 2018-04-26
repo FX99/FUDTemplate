@@ -15,6 +15,7 @@
 		17DF4DD02074B65600833F66 /* FUDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DF4DCF2074B65600833F66 /* FUDLoginViewController.m */; };
 		17DF4DD32074B68700833F66 /* FUDRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DF4DD22074B68700833F66 /* FUDRegisterViewController.m */; };
 		17DF4DD62074C6AA00833F66 /* FUDBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DF4DD52074C6AA00833F66 /* FUDBaseNavigationController.m */; };
+		17ECD7BC2091A38300FDD163 /* FUDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17ECD7BB2091A38300FDD163 /* FUDTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		17DF4DD22074B68700833F66 /* FUDRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUDRegisterViewController.m; sourceTree = "<group>"; };
 		17DF4DD42074C6AA00833F66 /* FUDBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUDBaseNavigationController.h; sourceTree = "<group>"; };
 		17DF4DD52074C6AA00833F66 /* FUDBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUDBaseNavigationController.m; sourceTree = "<group>"; };
+		17ECD7BA2091A38300FDD163 /* FUDTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUDTabBarController.h; sourceTree = "<group>"; };
+		17ECD7BB2091A38300FDD163 /* FUDTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUDTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,23 +69,65 @@
 		1740589D206E41C90083EB2D /* FUDTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				1740589E206E41C90083EB2D /* AppDelegate.h */,
-				1740589F206E41C90083EB2D /* AppDelegate.m */,
-				174058B4206E428D0083EB2D /* FUDBaseViewController.h */,
-				174058B5206E428D0083EB2D /* FUDBaseViewController.m */,
-				17DF4DD42074C6AA00833F66 /* FUDBaseNavigationController.h */,
-				17DF4DD52074C6AA00833F66 /* FUDBaseNavigationController.m */,
-				173EEF08207A170A00FE28D8 /* FUDGuidePageViewController.h */,
-				173EEF09207A170A00FE28D8 /* FUDGuidePageViewController.m */,
-				17DF4DCE2074B65600833F66 /* FUDLoginViewController.h */,
-				17DF4DCF2074B65600833F66 /* FUDLoginViewController.m */,
-				17DF4DD12074B68700833F66 /* FUDRegisterViewController.h */,
-				17DF4DD22074B68700833F66 /* FUDRegisterViewController.m */,
+				17ECD7C12091A57F00FDD163 /* Application */,
+				17ECD7C02091A53800FDD163 /* Account */,
+				17ECD7BF2091A4FF00FDD163 /* Me */,
+				17ECD7BD2091A3C700FDD163 /* BaseUI */,
+				17ECD7BE2091A3FF00FDD163 /* Home */,
 				174058A7206E41C90083EB2D /* Assets.xcassets */,
 				174058AC206E41C90083EB2D /* Info.plist */,
 				174058AD206E41C90083EB2D /* main.m */,
 			);
 			path = FUDTemplate;
+			sourceTree = "<group>";
+		};
+		17ECD7BD2091A3C700FDD163 /* BaseUI */ = {
+			isa = PBXGroup;
+			children = (
+				17ECD7BA2091A38300FDD163 /* FUDTabBarController.h */,
+				17ECD7BB2091A38300FDD163 /* FUDTabBarController.m */,
+				174058B4206E428D0083EB2D /* FUDBaseViewController.h */,
+				174058B5206E428D0083EB2D /* FUDBaseViewController.m */,
+				17DF4DD42074C6AA00833F66 /* FUDBaseNavigationController.h */,
+				17DF4DD52074C6AA00833F66 /* FUDBaseNavigationController.m */,
+			);
+			path = BaseUI;
+			sourceTree = "<group>";
+		};
+		17ECD7BE2091A3FF00FDD163 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		17ECD7BF2091A4FF00FDD163 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		17ECD7C02091A53800FDD163 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				17DF4DCE2074B65600833F66 /* FUDLoginViewController.h */,
+				17DF4DCF2074B65600833F66 /* FUDLoginViewController.m */,
+				17DF4DD12074B68700833F66 /* FUDRegisterViewController.h */,
+				17DF4DD22074B68700833F66 /* FUDRegisterViewController.m */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		17ECD7C12091A57F00FDD163 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1740589E206E41C90083EB2D /* AppDelegate.h */,
+				1740589F206E41C90083EB2D /* AppDelegate.m */,
+				173EEF08207A170A00FE28D8 /* FUDGuidePageViewController.h */,
+				173EEF09207A170A00FE28D8 /* FUDGuidePageViewController.m */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +206,7 @@
 				17DF4DD02074B65600833F66 /* FUDLoginViewController.m in Sources */,
 				174058A0206E41C90083EB2D /* AppDelegate.m in Sources */,
 				17DF4DD32074B68700833F66 /* FUDRegisterViewController.m in Sources */,
+				17ECD7BC2091A38300FDD163 /* FUDTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
