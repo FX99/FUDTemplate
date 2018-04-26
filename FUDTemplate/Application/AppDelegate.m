@@ -10,6 +10,10 @@
 #import "FUDLoginViewController.h"
 #import "FUDBaseNavigationController.h"
 #import "FUDGuidePageViewController.h"
+#import "FUDHomeViewController.h"
+#import "FUDDiscoverViewController.h"
+#import "FUDMeViewController.h"
+#import "FUDTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -63,9 +67,31 @@
 
 - (void)managerRootViewController {
     if ([FUDGuidePageViewController hasShown]) {
-        FUDLoginViewController *loginVC = [[FUDLoginViewController alloc] init];
-        FUDBaseNavigationController *navigationController = [[FUDBaseNavigationController alloc] initWithRootViewController:loginVC];
-        self.window.rootViewController = navigationController;
+        if ([FUDAccountManager currentAccount].loginStatus == FUDLoginStatusLoggedIn) {
+            FUDHomeViewController *homeViewController = [[FUDHomeViewController alloc] init];
+            FUDBaseNavigationController *homeNavigationController = [[FUDBaseNavigationController alloc] initWithRootViewController:homeViewController];
+            homeNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"首页" image:nil selectedImage:nil];
+            
+            FUDDiscoverViewController *discoverViewController = [[FUDDiscoverViewController alloc] init];
+            FUDBaseNavigationController *discoverNavigationController = [[FUDBaseNavigationController alloc] initWithRootViewController:discoverViewController];
+            discoverNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"发现" image:nil selectedImage:nil];
+            
+            FUDMeViewController *meViewController = [[FUDMeViewController alloc] init];
+            FUDBaseNavigationController *meNavigationController = [[FUDBaseNavigationController alloc] initWithRootViewController:meViewController];
+            meNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"我的" image:nil selectedImage:nil];
+            
+            FUDTabBarController *tabBarController = [[FUDTabBarController alloc] init];
+            tabBarController.viewControllers = @[homeNavigationController,
+                                                 discoverNavigationController,
+                                                 meNavigationController];
+            
+            self.window.rootViewController = tabBarController;
+            
+        } else {
+            FUDLoginViewController *loginVC = [[FUDLoginViewController alloc] init];
+            FUDBaseNavigationController *navigationController = [[FUDBaseNavigationController alloc] initWithRootViewController:loginVC];
+            self.window.rootViewController = navigationController;
+        }
     } else {
         FUDGuidePageViewController *guideViewController = [[FUDGuidePageViewController alloc] init];
         self.window.rootViewController = guideViewController;
