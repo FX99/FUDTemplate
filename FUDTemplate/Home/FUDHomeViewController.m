@@ -19,4 +19,8 @@
     
 }
 
+- (BOOL)prefersNavigationBarHidden {
+    return YES;
+}
+
 @end
