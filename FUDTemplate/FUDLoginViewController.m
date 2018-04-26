@@ -8,6 +8,13 @@
 
 #import "FUDLoginViewController.h"
 
+NSString * const fud_isLoginKey  = @"FUDIsLogin";
+NSString * const fud_userNameKey = @"FUDUserName";
+NSString * const fud_tokenKey    = @"FUDToken";
+NSString * const fud_loginStatusKey = @"FUDLoginStatus";
+
+NSNotificationName const FUDLoginStatusDidChangeNotification = @"FUDLoginStatusDidChangeNotification";
+
 @interface FUDLoginViewController ()
 
 @property (nonatomic) UIButton *registerButton;
@@ -60,7 +67,14 @@
 }
 
 - (void)loginButtonHandler {
+    NSString *userName = @"fudo";
+    NSString *token = @"I am token string";
     
+    [[NSUserDefaults standardUserDefaults] setValue:userName forKey:fud_userNameKey];
+    [[NSUserDefaults standardUserDefaults] setValue:token forKey:fud_tokenKey];
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:fud_isLoginKey];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:FUDLoginStatusDidChangeNotification object:nil userInfo:@{fud_loginStatusKey: @0}];
 }
 
 @end
