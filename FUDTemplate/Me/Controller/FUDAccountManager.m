@@ -23,19 +23,21 @@ NSNotificationName const FUDLoginStatusDidChangeNotification = @"FUDLoginStatusD
     dispatch_once(&onceToken, ^{
         if (_shareInstance == nil) {
             _shareInstance = [[FUDAccountManager alloc] init];
-            [[NSNotificationCenter defaultCenter] addObserver:_shareInstance selector:@selector(didReceiveLoginStatusChangeNotification:) name:FUDLoginStatusDidChangeNotification object:nil];
         }
     });
     return _shareInstance;
 }
 
-- (void)didReceiveLoginStatusChangeNotification:(NSNotification *)notification {
-    NSDictionary *userInfo = notification.userInfo;
-    
-    [[NSUserDefaults standardUserDefaults] setValue:userInfo[fud_loginStatusKey] forKey:fud_loginStatusKey];
-    [[NSUserDefaults standardUserDefaults] setValue:userInfo[fud_userNameKey] forKey:fud_userNameKey];
-    [[NSUserDefaults standardUserDefaults] setValue:userInfo[fud_userIDKey] forKey:fud_userIDKey];
-    [[NSUserDefaults standardUserDefaults] setValue:userInfo[fud_tokenKey] forKey:fud_tokenKey];
+- (FUDLoginStatus)loginStatus {
+    return [[[NSUserDefaults standardUserDefaults] valueForKey:fud_loginStatusKey] integerValue];
+}
+
+- (NSString *)userName {
+    return [[NSUserDefaults standardUserDefaults] valueForKey:fud_userNameKey] ? : @"";
+}
+
+- (NSString *)userID {
+    return [[NSUserDefaults standardUserDefaults] valueForKey:fud_userIDKey] ? : @"";
 }
 
 @end

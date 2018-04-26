@@ -16,8 +16,8 @@ extern NSString * const fud_tokenKey;
 extern NSNotificationName const FUDLoginStatusDidChangeNotification;
 
 typedef NS_ENUM(NSInteger, FUDLoginStatus) {
-    FUDLoginStatusLoggedIn = 0,
-    FUDLoginStatusLoggedOut = 1,
+    FUDLoginStatusLoggedIn = 1,
+    FUDLoginStatusLoggedOut = 2,
 };
 
 @interface FUDAccountManager : NSObject
