@@ -10,6 +10,9 @@
 
 @interface FUDLoginViewController ()
 
+@property (nonatomic) UIButton *registerButton;
+@property (nonatomic) UIButton *loginButton;
+
 @end
 
 @implementation FUDLoginViewController
@@ -17,14 +20,34 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIButton *registerButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    registerButton.frame = CGRectMake(100, 300, self.view.frame.size.width - 200, 40);
-    registerButton.backgroundColor = [UIColor orangeColor];
-    [registerButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [registerButton setTitle:@"注册" forState:UIControlStateNormal];
-    [registerButton addTarget:self action:@selector(registerButtonHandler) forControlEvents:UIControlEventTouchUpInside];
+    [self initSubviews];
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
     
-    [self.view addSubview:registerButton];
+    [self layoutSubviews];
+}
+
+- (void)initSubviews {
+    self.registerButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.registerButton.backgroundColor = [UIColor orangeColor];
+    [self.registerButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.registerButton setTitle:@"注册" forState:UIControlStateNormal];
+    [self.registerButton addTarget:self action:@selector(registerButtonHandler) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.registerButton];
+    
+    self.loginButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.loginButton.backgroundColor = [UIColor orangeColor];
+    [self.loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.loginButton setTitle:@"登录" forState:UIControlStateNormal];
+    [self.loginButton addTarget:self action:@selector(loginButtonHandler) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.loginButton];
+}
+
+- (void)layoutSubviews {
+    self.registerButton.frame = CGRectMake(100.0, self.topLayoutGuide.length, self.view.frame.size.width - 200.0, 40.0);
+    self.loginButton.frame = CGRectMake(100.0, CGRectGetMaxY(self.registerButton.frame) + 20.0, self.view.frame.size.width - 200.0, 40.0);
 }
 
 - (BOOL)prefersNavigationBarHidden {
@@ -34,6 +57,10 @@
 - (void)registerButtonHandler {
     FUDRegisterViewController *registerVC = [[FUDRegisterViewController alloc] init];
     [self.navigationController pushViewController:registerVC animated:YES];
+}
+
+- (void)loginButtonHandler {
+    
 }
 
 @end
