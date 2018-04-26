@@ -8,13 +8,6 @@
 
 #import "FUDLoginViewController.h"
 
-NSString * const fud_isLoginKey  = @"FUDIsLogin";
-NSString * const fud_userNameKey = @"FUDUserName";
-NSString * const fud_tokenKey    = @"FUDToken";
-NSString * const fud_loginStatusKey = @"FUDLoginStatus";
-
-NSNotificationName const FUDLoginStatusDidChangeNotification = @"FUDLoginStatusDidChangeNotification";
-
 @interface FUDLoginViewController ()
 
 @property (nonatomic) UIButton *registerButton;

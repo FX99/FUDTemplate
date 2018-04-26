@@ -58,6 +58,7 @@
 
 - (void)registeServices {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(managerRootViewController) name:FUDGuidePageDidShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(managerRootViewController) name:FUDLoginStatusDidChangeNotification object:nil];
 }
 
 - (void)managerRootViewController {

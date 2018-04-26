@@ -19,6 +19,7 @@
 		17ECD7C42091A63500FDD163 /* FUDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17ECD7C32091A63500FDD163 /* FUDHomeViewController.m */; };
 		17ECD7C72091A6A100FDD163 /* FUDMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17ECD7C62091A6A100FDD163 /* FUDMeViewController.m */; };
 		17ECD7CB2091A72600FDD163 /* FUDDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17ECD7CA2091A72600FDD163 /* FUDDiscoverViewController.m */; };
+		17ECD7D02091AA4800FDD163 /* FUDAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17ECD7CF2091AA4800FDD163 /* FUDAccountManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,9 @@
 		17ECD7C62091A6A100FDD163 /* FUDMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUDMeViewController.m; sourceTree = "<group>"; };
 		17ECD7C92091A72600FDD163 /* FUDDiscoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUDDiscoverViewController.h; sourceTree = "<group>"; };
 		17ECD7CA2091A72600FDD163 /* FUDDiscoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUDDiscoverViewController.m; sourceTree = "<group>"; };
+		17ECD7CE2091AA4800FDD163 /* FUDAccountManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUDAccountManager.h; sourceTree = "<group>"; };
+		17ECD7CF2091AA4800FDD163 /* FUDAccountManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUDAccountManager.m; sourceTree = "<group>"; };
+		17ECD7D12091AB4100FDD163 /* FUDTemplatePrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUDTemplatePrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,15 +82,15 @@
 		1740589D206E41C90083EB2D /* FUDTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				17ECD7C82091A6F300FDD163 /* Discover */,
 				17ECD7C12091A57F00FDD163 /* Application */,
-				17ECD7C02091A53800FDD163 /* Account */,
 				17ECD7BD2091A3C700FDD163 /* BaseUI */,
 				17ECD7BE2091A3FF00FDD163 /* Home */,
+				17ECD7C82091A6F300FDD163 /* Discover */,
 				17ECD7BF2091A4FF00FDD163 /* Me */,
 				174058A7206E41C90083EB2D /* Assets.xcassets */,
 				174058AC206E41C90083EB2D /* Info.plist */,
 				174058AD206E41C90083EB2D /* main.m */,
+				17ECD7D12091AB4100FDD163 /* FUDTemplatePrefixHeader.pch */,
 			);
 			path = FUDTemplate;
 			sourceTree = "<group>";
@@ -116,21 +120,10 @@
 		17ECD7BF2091A4FF00FDD163 /* Me */ = {
 			isa = PBXGroup;
 			children = (
-				17ECD7C52091A6A100FDD163 /* FUDMeViewController.h */,
-				17ECD7C62091A6A100FDD163 /* FUDMeViewController.m */,
+				17ECD7CD2091AA2900FDD163 /* Model */,
+				17ECD7CC2091AA1A00FDD163 /* Controller */,
 			);
 			path = Me;
-			sourceTree = "<group>";
-		};
-		17ECD7C02091A53800FDD163 /* Account */ = {
-			isa = PBXGroup;
-			children = (
-				17DF4DCE2074B65600833F66 /* FUDLoginViewController.h */,
-				17DF4DCF2074B65600833F66 /* FUDLoginViewController.m */,
-				17DF4DD12074B68700833F66 /* FUDRegisterViewController.h */,
-				17DF4DD22074B68700833F66 /* FUDRegisterViewController.m */,
-			);
-			path = Account;
 			sourceTree = "<group>";
 		};
 		17ECD7C12091A57F00FDD163 /* Application */ = {
@@ -151,6 +144,28 @@
 				17ECD7CA2091A72600FDD163 /* FUDDiscoverViewController.m */,
 			);
 			path = Discover;
+			sourceTree = "<group>";
+		};
+		17ECD7CC2091AA1A00FDD163 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				17ECD7CE2091AA4800FDD163 /* FUDAccountManager.h */,
+				17ECD7CF2091AA4800FDD163 /* FUDAccountManager.m */,
+				17ECD7C52091A6A100FDD163 /* FUDMeViewController.h */,
+				17ECD7C62091A6A100FDD163 /* FUDMeViewController.m */,
+				17DF4DCE2074B65600833F66 /* FUDLoginViewController.h */,
+				17DF4DCF2074B65600833F66 /* FUDLoginViewController.m */,
+				17DF4DD12074B68700833F66 /* FUDRegisterViewController.h */,
+				17DF4DD22074B68700833F66 /* FUDRegisterViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		17ECD7CD2091AA2900FDD163 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +240,7 @@
 				17ECD7CB2091A72600FDD163 /* FUDDiscoverViewController.m in Sources */,
 				17DF4DD62074C6AA00833F66 /* FUDBaseNavigationController.m in Sources */,
 				174058B6206E428D0083EB2D /* FUDBaseViewController.m in Sources */,
+				17ECD7D02091AA4800FDD163 /* FUDAccountManager.m in Sources */,
 				174058AE206E41C90083EB2D /* main.m in Sources */,
 				173EEF0A207A170A00FE28D8 /* FUDGuidePageViewController.m in Sources */,
 				17ECD7C72091A6A100FDD163 /* FUDMeViewController.m in Sources */,
@@ -350,6 +366,9 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5AR95QDSAR;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/lanfudong/Documents/MyProjects/FUDTemplate/FUDTemplate/FUDTemplatePrefixHeader.pch;
 				INFOPLIST_FILE = FUDTemplate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -366,6 +385,9 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5AR95QDSAR;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/lanfudong/Documents/MyProjects/FUDTemplate/FUDTemplate/FUDTemplatePrefixHeader.pch;
 				INFOPLIST_FILE = FUDTemplate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
