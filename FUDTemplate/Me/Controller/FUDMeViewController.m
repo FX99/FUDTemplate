@@ -20,4 +20,8 @@
     self.navigationItem.title = @"我的";
 }
 
+- (UIColor *)prefersNavigationBarShadowColor {
+    return [UIColor orangeColor];
+}
+
 @end

@@ -22,6 +22,11 @@
     if (self.enableDefaultLeftNavigationBarButton) {
         [self setDefaultLeftNavigationBarButton];
     }
+    
+    UIImage *navigationBarImage = [UIImage fud_imageWithColor:[self prefersNavigationBarColor]];
+    UIImage *navigationBarShadowImage = [UIImage fud_imageWithColor:[self prefersNavigationBarShadowColor]];
+    [self.navigationController.navigationBar setBackgroundImage:navigationBarImage forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:navigationBarShadowImage];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -58,6 +63,14 @@
 
 - (BOOL)enablePopGesture {
     return YES;
+}
+
+- (UIColor *)prefersNavigationBarColor {
+    return [UIColor orangeColor];
+}
+
+- (UIColor *)prefersNavigationBarShadowColor {
+    return [UIColor lightGrayColor];
 }
 
 @end
