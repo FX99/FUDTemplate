@@ -20,6 +20,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.navigationItem.title = @"登录";
+    
+    UIBarButtonItem *registerItem = [[UIBarButtonItem alloc] initWithTitle:@"注册" style:UIBarButtonItemStylePlain target:self action:@selector(registerButtonHandler)];
+    self.navigationItem.rightBarButtonItem = registerItem;
     [self initSubviews];
 }
 
@@ -46,12 +50,8 @@
 }
 
 - (void)layoutSubviews {
-    self.registerButton.frame = CGRectMake(100.0, self.topLayoutGuide.length, self.view.frame.size.width - 200.0, 40.0);
+    self.registerButton.frame = CGRectMake(100.0, self.topLayoutGuide.length + 20.0, self.view.frame.size.width - 200.0, 40.0);
     self.loginButton.frame = CGRectMake(100.0, CGRectGetMaxY(self.registerButton.frame) + 20.0, self.view.frame.size.width - 200.0, 40.0);
-}
-
-- (BOOL)prefersNavigationBarHidden {
-    return YES;
 }
 
 - (void)registerButtonHandler {

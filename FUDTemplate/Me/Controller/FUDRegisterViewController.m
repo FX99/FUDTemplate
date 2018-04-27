@@ -16,7 +16,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.navigationItem.title = @"注册";
+}
+
+- (UIColor *)prefersNavigationBarColor {
+    return [UIColor greenColor];
+}
+
+- (UIColor *)prefersNavigationTitleColor {
+    return [UIColor blackColor];
 }
 
 @end
