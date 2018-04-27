@@ -22,6 +22,7 @@
 		17ECD7CB2091A72600FDD163 /* FUDDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17ECD7CA2091A72600FDD163 /* FUDDiscoverViewController.m */; };
 		17ECD7D02091AA4800FDD163 /* FUDAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17ECD7CF2091AA4800FDD163 /* FUDAccountManager.m */; };
 		17ECD7D52091E4FB00FDD163 /* UIImage+FUDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 17ECD7D42091E4FB00FDD163 /* UIImage+FUDColor.m */; };
+		881C33A940F41968FB7FD9C8 /* libPods-FUDTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0BD934BB20655C70DA16183 /* libPods-FUDTemplate.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,9 @@
 		17ECD7D12091AB4100FDD163 /* FUDTemplatePrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUDTemplatePrefixHeader.pch; sourceTree = "<group>"; };
 		17ECD7D32091E4FB00FDD163 /* UIImage+FUDColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FUDColor.h"; sourceTree = "<group>"; };
 		17ECD7D42091E4FB00FDD163 /* UIImage+FUDColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FUDColor.m"; sourceTree = "<group>"; };
+		5F8E5919B164660637EA5096 /* Pods-FUDTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FUDTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FUDTemplate/Pods-FUDTemplate.debug.xcconfig"; sourceTree = "<group>"; };
+		C8DCC2946780273AC4BDEE0D /* Pods-FUDTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FUDTemplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-FUDTemplate/Pods-FUDTemplate.release.xcconfig"; sourceTree = "<group>"; };
+		F0BD934BB20655C70DA16183 /* libPods-FUDTemplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FUDTemplate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				881C33A940F41968FB7FD9C8 /* libPods-FUDTemplate.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,8 @@
 			children = (
 				1740589D206E41C90083EB2D /* FUDTemplate */,
 				1740589C206E41C90083EB2D /* Products */,
+				DD4FC9EFC19FBEAFD3EA9B04 /* Pods */,
+				1CA2729B0D21BED2B2FE62CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -186,6 +193,23 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		1CA2729B0D21BED2B2FE62CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0BD934BB20655C70DA16183 /* libPods-FUDTemplate.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD4FC9EFC19FBEAFD3EA9B04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F8E5919B164660637EA5096 /* Pods-FUDTemplate.debug.xcconfig */,
+				C8DCC2946780273AC4BDEE0D /* Pods-FUDTemplate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -193,9 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 174058B1206E41C90083EB2D /* Build configuration list for PBXNativeTarget "FUDTemplate" */;
 			buildPhases = (
+				337148677D45E03BE37B6926 /* [CP] Check Pods Manifest.lock */,
 				17405897206E41C90083EB2D /* Sources */,
 				17405898206E41C90083EB2D /* Frameworks */,
 				17405899206E41C90083EB2D /* Resources */,
+				17252E3BC2387135D5606867 /* [CP] Embed Pods Frameworks */,
+				8C6409042985BB86989344A3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,6 +276,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17252E3BC2387135D5606867 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FUDTemplate/Pods-FUDTemplate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		337148677D45E03BE37B6926 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FUDTemplate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C6409042985BB86989344A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FUDTemplate/Pods-FUDTemplate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		17405897206E41C90083EB2D /* Sources */ = {
@@ -381,6 +459,7 @@
 		};
 		174058B2206E41C90083EB2D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F8E5919B164660637EA5096 /* Pods-FUDTemplate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -400,6 +479,7 @@
 		};
 		174058B3206E41C90083EB2D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8DCC2946780273AC4BDEE0D /* Pods-FUDTemplate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
