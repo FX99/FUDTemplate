@@ -22,6 +22,15 @@
     self.delegate = self;
 }
 
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    if ([viewController isKindOfClass:[FUDBaseViewController class]]) {
+        FUDBaseViewController *baseViewController = (FUDBaseViewController *)viewController;
+        viewController.hidesBottomBarWhenPushed = baseViewController.prefersTabBarHidden;
+    }
+    
+    [super pushViewController:viewController animated:YES];
+}
+
 - (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
     if ([viewController isKindOfClass:[FUDBaseViewController class]]) {
         FUDBaseViewController *baseViewController = (FUDBaseViewController *)viewController;

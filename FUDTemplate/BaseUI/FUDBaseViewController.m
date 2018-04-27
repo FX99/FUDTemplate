@@ -53,6 +53,10 @@
     return NO;
 }
 
+- (BOOL)prefersTabBarHidden {
+    return YES;
+}
+
 - (BOOL)enablePopGesture {
     return YES;
 }

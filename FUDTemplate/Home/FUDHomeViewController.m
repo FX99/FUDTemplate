@@ -23,4 +23,8 @@
     return YES;
 }
 
+- (BOOL)prefersTabBarHidden {
+    return NO;
+}
+
 @end

@@ -24,4 +24,8 @@
     return [UIColor colorWithRed:0.5 green:0.8 blue:1.0 alpha:1.0];
 }
 
+- (BOOL)prefersTabBarHidden {
+    return NO;
+}
+
 @end
