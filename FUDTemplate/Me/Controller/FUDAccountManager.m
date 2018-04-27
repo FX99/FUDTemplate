@@ -40,4 +40,18 @@ NSNotificationName const FUDLoginStatusDidChangeNotification = @"FUDLoginStatusD
     return [[NSUserDefaults standardUserDefaults] valueForKey:fud_userIDKey] ? : @"";
 }
 
+- (void)updateAccountInfoWithDictionary:(NSDictionary *)accountInfo {
+    [[NSUserDefaults standardUserDefaults] setValue:accountInfo[fud_loginStatusKey] forKey:fud_loginStatusKey];
+    [[NSUserDefaults standardUserDefaults] setValue:accountInfo[fud_userNameKey] forKey:fud_userNameKey];
+    [[NSUserDefaults standardUserDefaults] setValue:accountInfo[fud_userIDKey] forKey:fud_userIDKey];
+    [[NSUserDefaults standardUserDefaults] setValue:accountInfo[fud_tokenKey] forKey:fud_tokenKey];
+}
+
+- (void)clearAccountInfo {
+    [[NSUserDefaults standardUserDefaults] setValue:@(FUDLoginStatusLoggedOut) forKey:fud_loginStatusKey];
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:fud_userNameKey];
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:fud_userIDKey];
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:fud_tokenKey];
+}
+
 @end

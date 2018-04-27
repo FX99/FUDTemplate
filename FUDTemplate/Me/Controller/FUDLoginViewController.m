@@ -69,11 +69,7 @@
                                fud_tokenKey: token,
                                fud_loginStatusKey: @(FUDLoginStatusLoggedIn)
                                };
-    
-    [[NSUserDefaults standardUserDefaults] setValue:userInfo[fud_loginStatusKey] forKey:fud_loginStatusKey];
-    [[NSUserDefaults standardUserDefaults] setValue:userInfo[fud_userNameKey] forKey:fud_userNameKey];
-    [[NSUserDefaults standardUserDefaults] setValue:userInfo[fud_userIDKey] forKey:fud_userIDKey];
-    [[NSUserDefaults standardUserDefaults] setValue:userInfo[fud_tokenKey] forKey:fud_tokenKey];
+    [[FUDAccountManager currentAccount] updateAccountInfoWithDictionary:userInfo];
     
     [[NSNotificationCenter defaultCenter] postNotificationName:FUDLoginStatusDidChangeNotification object:nil userInfo:userInfo];
 }

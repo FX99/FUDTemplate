@@ -27,5 +27,7 @@ typedef NS_ENUM(NSInteger, FUDLoginStatus) {
 @property (nonatomic, copy, readonly) NSString *userID;
 
 + (instancetype)currentAccount;
+- (void)updateAccountInfoWithDictionary:(NSDictionary *)accountInfo;
+- (void)clearAccountInfo;
 
 @end
