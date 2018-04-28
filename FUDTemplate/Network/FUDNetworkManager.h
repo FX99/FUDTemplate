@@ -14,6 +14,8 @@ typedef void (^FUDNetworkResponseHandler)(NSInteger code, NSString * _Nullable m
 
 @interface FUDNetworkManager : NSObject
 
++ (instancetype)sharedManager;
+
 - (void)get:(NSString *)URLString parameters:(NSDictionary * _Nullable)parameters responseHandler:(FUDNetworkResponseHandler)responseHandler;
 
 - (void)post:(NSString *)URLString parameters:(NSDictionary * _Nullable)parameters responseHandler:(FUDNetworkResponseHandler)responseHandler;

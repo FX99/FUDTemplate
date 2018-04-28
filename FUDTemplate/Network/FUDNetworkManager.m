@@ -11,6 +11,17 @@
 
 @implementation FUDNetworkManager
 
++ (instancetype)sharedManager {
+    static FUDNetworkManager *_sharedInstance;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        if (_sharedInstance == nil) {
+            _sharedInstance = [[FUDNetworkManager alloc] init];
+        }
+    });
+    return _sharedInstance;
+}
+
 - (void)get:(NSString *)URLString parameters:(NSDictionary *)parameters responseHandler:(FUDNetworkResponseHandler)responseHandler {
     NSDictionary *finalParameters = [self generateFinalParameters:parameters];
     
