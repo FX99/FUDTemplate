@@ -41,6 +41,11 @@
 		1786A1872092D95D004EF1A7 /* FUDSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUDSettingsViewController.m; sourceTree = "<group>"; };
 		1786A18A20930473004EF1A7 /* FUDNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUDNetworkManager.h; sourceTree = "<group>"; };
 		1786A18B20930473004EF1A7 /* FUDNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUDNetworkManager.m; sourceTree = "<group>"; };
+		1786A1992094137E004EF1A7 /* Settings-DebugTest.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Settings-DebugTest.plist"; sourceTree = "<group>"; };
+		1786A19C209415AF004EF1A7 /* Settings-DebugProduction.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Settings-DebugProduction.plist"; sourceTree = "<group>"; };
+		1786A19E20941611004EF1A7 /* Settings-DebugDevelop.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Settings-DebugDevelop.plist"; sourceTree = "<group>"; };
+		1786A1A020941628004EF1A7 /* Settings-ReleaseTest.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Settings-ReleaseTest.plist"; sourceTree = "<group>"; };
+		1786A1A220941640004EF1A7 /* Settings-ReleaseProduction.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Settings-ReleaseProduction.plist"; sourceTree = "<group>"; };
 		17DF4DCE2074B65600833F66 /* FUDLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUDLoginViewController.h; sourceTree = "<group>"; };
 		17DF4DCF2074B65600833F66 /* FUDLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUDLoginViewController.m; sourceTree = "<group>"; };
 		17DF4DD12074B68700833F66 /* FUDRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUDRegisterViewController.h; sourceTree = "<group>"; };
@@ -60,8 +65,11 @@
 		17ECD7D12091AB4100FDD163 /* FUDTemplatePrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUDTemplatePrefixHeader.pch; sourceTree = "<group>"; };
 		17ECD7D32091E4FB00FDD163 /* UIImage+FUDColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FUDColor.h"; sourceTree = "<group>"; };
 		17ECD7D42091E4FB00FDD163 /* UIImage+FUDColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FUDColor.m"; sourceTree = "<group>"; };
-		5F8E5919B164660637EA5096 /* Pods-FUDTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FUDTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FUDTemplate/Pods-FUDTemplate.debug.xcconfig"; sourceTree = "<group>"; };
-		C8DCC2946780273AC4BDEE0D /* Pods-FUDTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FUDTemplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-FUDTemplate/Pods-FUDTemplate.release.xcconfig"; sourceTree = "<group>"; };
+		19D25BE4F9F45E02BFD0F958 /* Pods-FUDTemplate.releasetest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FUDTemplate.releasetest.xcconfig"; path = "Pods/Target Support Files/Pods-FUDTemplate/Pods-FUDTemplate.releasetest.xcconfig"; sourceTree = "<group>"; };
+		2FE74B3D8C42FB8092D9BD57 /* Pods-FUDTemplate.releaseproduction.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FUDTemplate.releaseproduction.xcconfig"; path = "Pods/Target Support Files/Pods-FUDTemplate/Pods-FUDTemplate.releaseproduction.xcconfig"; sourceTree = "<group>"; };
+		4D11C93BB00F751F3B3C5A1F /* Pods-FUDTemplate.debugdevelop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FUDTemplate.debugdevelop.xcconfig"; path = "Pods/Target Support Files/Pods-FUDTemplate/Pods-FUDTemplate.debugdevelop.xcconfig"; sourceTree = "<group>"; };
+		CA53E30F0FCD75B967690F65 /* Pods-FUDTemplate.debugproduction.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FUDTemplate.debugproduction.xcconfig"; path = "Pods/Target Support Files/Pods-FUDTemplate/Pods-FUDTemplate.debugproduction.xcconfig"; sourceTree = "<group>"; };
+		D7CE3FF302E1913B85567769 /* Pods-FUDTemplate.debugtest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FUDTemplate.debugtest.xcconfig"; path = "Pods/Target Support Files/Pods-FUDTemplate/Pods-FUDTemplate.debugtest.xcconfig"; sourceTree = "<group>"; };
 		F0BD934BB20655C70DA16183 /* libPods-FUDTemplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FUDTemplate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -105,6 +113,7 @@
 				17ECD7BE2091A3FF00FDD163 /* Home */,
 				17ECD7C82091A6F300FDD163 /* Discover */,
 				17ECD7BF2091A4FF00FDD163 /* Me */,
+				1786A19B20941538004EF1A7 /* Sources */,
 				174058A7206E41C90083EB2D /* Assets.xcassets */,
 				174058AC206E41C90083EB2D /* Info.plist */,
 				174058AD206E41C90083EB2D /* main.m */,
@@ -120,6 +129,18 @@
 				1786A18B20930473004EF1A7 /* FUDNetworkManager.m */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		1786A19B20941538004EF1A7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1786A1992094137E004EF1A7 /* Settings-DebugTest.plist */,
+				1786A19E20941611004EF1A7 /* Settings-DebugDevelop.plist */,
+				1786A19C209415AF004EF1A7 /* Settings-DebugProduction.plist */,
+				1786A1A020941628004EF1A7 /* Settings-ReleaseTest.plist */,
+				1786A1A220941640004EF1A7 /* Settings-ReleaseProduction.plist */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		17ECD7BD2091A3C700FDD163 /* BaseUI */ = {
@@ -217,8 +238,11 @@
 		DD4FC9EFC19FBEAFD3EA9B04 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5F8E5919B164660637EA5096 /* Pods-FUDTemplate.debug.xcconfig */,
-				C8DCC2946780273AC4BDEE0D /* Pods-FUDTemplate.release.xcconfig */,
+				4D11C93BB00F751F3B3C5A1F /* Pods-FUDTemplate.debugdevelop.xcconfig */,
+				CA53E30F0FCD75B967690F65 /* Pods-FUDTemplate.debugproduction.xcconfig */,
+				D7CE3FF302E1913B85567769 /* Pods-FUDTemplate.debugtest.xcconfig */,
+				19D25BE4F9F45E02BFD0F958 /* Pods-FUDTemplate.releasetest.xcconfig */,
+				2FE74B3D8C42FB8092D9BD57 /* Pods-FUDTemplate.releaseproduction.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -236,6 +260,7 @@
 				17405899206E41C90083EB2D /* Resources */,
 				17252E3BC2387135D5606867 /* [CP] Embed Pods Frameworks */,
 				8C6409042985BB86989344A3 /* [CP] Copy Pods Resources */,
+				1786A1A4209418C9004EF1A7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -306,6 +331,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FUDTemplate/Pods-FUDTemplate-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		1786A1A4209418C9004EF1A7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" == \"DebugDevelop\" ]; then\ncp -r \"${PROJECT_DIR}/FUDTemplate/Sources/Settings-DebugDevelop.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/Settings.plist\"\nelif [ \"${CONFIGURATION}\" == \"DebugTest\" ]; then\ncp -r \"${PROJECT_DIR}/FUDTemplate/Sources/Settings-DebugTest.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/Settings.plist\"\nelif [ \"${CONFIGURATION}\" == \"DebugProduction\" ]; then\ncp -r \"${PROJECT_DIR}/FUDTemplate/Sources/Settings-DebugProduction.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/Settings.plist\"\nelif [ \"${CONFIGURATION}\" == \"ReleaseTest\" ]; then\ncp -r \"${PROJECT_DIR}/FUDTemplate/Sources/Settings-ReleaseTest.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/Settings.plist\"\nelif [ \"${CONFIGURATION}\" == \"ReleaseProduction\" ]; then\ncp -r \"${PROJECT_DIR}/FUDTemplate/Sources/Settings-ReleaseProduction.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/Settings.plist\"";
+		};
 		337148677D45E03BE37B6926 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -367,7 +405,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		174058AF206E41C90083EB2D /* Debug */ = {
+		1786A18D20940D10004EF1A7 /* DebugTest */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -415,14 +453,184 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
-			name = Debug;
+			name = DebugTest;
 		};
-		174058B0206E41C90083EB2D /* Release */ = {
+		1786A18E20940D10004EF1A7 /* DebugTest */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7CE3FF302E1913B85567769 /* Pods-FUDTemplate.debugtest.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5AR95QDSAR;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/lanfudong/Documents/MyProjects/FUDTemplate/FUDTemplate/FUDTemplatePrefixHeader.pch;
+				INFOPLIST_FILE = FUDTemplate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fudo.FUDTemplate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = DebugTest;
+		};
+		1786A18F20940D26004EF1A7 /* DebugProduction */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = DebugProduction;
+		};
+		1786A19020940D26004EF1A7 /* DebugProduction */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA53E30F0FCD75B967690F65 /* Pods-FUDTemplate.debugproduction.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5AR95QDSAR;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/lanfudong/Documents/MyProjects/FUDTemplate/FUDTemplate/FUDTemplatePrefixHeader.pch;
+				INFOPLIST_FILE = FUDTemplate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fudo.FUDTemplate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = DebugProduction;
+		};
+		1786A19120940D33004EF1A7 /* DebugDevelop */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = DebugDevelop;
+		};
+		1786A19220940D33004EF1A7 /* DebugDevelop */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D11C93BB00F751F3B3C5A1F /* Pods-FUDTemplate.debugdevelop.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5AR95QDSAR;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/lanfudong/Documents/MyProjects/FUDTemplate/FUDTemplate/FUDTemplatePrefixHeader.pch;
+				INFOPLIST_FILE = FUDTemplate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fudo.FUDTemplate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = DebugDevelop;
+		};
+		1786A1932094126A004EF1A7 /* ReleaseProduction */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -464,16 +672,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = ReleaseProduction;
 		};
-		174058B2206E41C90083EB2D /* Debug */ = {
+		1786A1942094126A004EF1A7 /* ReleaseProduction */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F8E5919B164660637EA5096 /* Pods-FUDTemplate.debug.xcconfig */;
+			baseConfigurationReference = 2FE74B3D8C42FB8092D9BD57 /* Pods-FUDTemplate.releaseproduction.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -489,11 +697,60 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
-			name = Debug;
+			name = ReleaseProduction;
 		};
-		174058B3206E41C90083EB2D /* Release */ = {
+		1786A1952094127A004EF1A7 /* ReleaseTest */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8DCC2946780273AC4BDEE0D /* Pods-FUDTemplate.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = ReleaseTest;
+		};
+		1786A1962094127A004EF1A7 /* ReleaseTest */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19D25BE4F9F45E02BFD0F958 /* Pods-FUDTemplate.releasetest.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -509,7 +766,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
-			name = Release;
+			name = ReleaseTest;
 		};
 /* End XCBuildConfiguration section */
 
@@ -517,20 +774,26 @@
 		17405896206E41C90083EB2D /* Build configuration list for PBXProject "FUDTemplate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				174058AF206E41C90083EB2D /* Debug */,
-				174058B0206E41C90083EB2D /* Release */,
+				1786A19120940D33004EF1A7 /* DebugDevelop */,
+				1786A18F20940D26004EF1A7 /* DebugProduction */,
+				1786A18D20940D10004EF1A7 /* DebugTest */,
+				1786A1952094127A004EF1A7 /* ReleaseTest */,
+				1786A1932094126A004EF1A7 /* ReleaseProduction */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = DebugDevelop;
 		};
 		174058B1206E41C90083EB2D /* Build configuration list for PBXNativeTarget "FUDTemplate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				174058B2206E41C90083EB2D /* Debug */,
-				174058B3206E41C90083EB2D /* Release */,
+				1786A19220940D33004EF1A7 /* DebugDevelop */,
+				1786A19020940D26004EF1A7 /* DebugProduction */,
+				1786A18E20940D10004EF1A7 /* DebugTest */,
+				1786A1962094127A004EF1A7 /* ReleaseTest */,
+				1786A1942094126A004EF1A7 /* ReleaseProduction */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = DebugDevelop;
 		};
 /* End XCConfigurationList section */
 	};
