@@ -14,6 +14,8 @@
 		174058B6206E428D0083EB2D /* FUDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 174058B5206E428D0083EB2D /* FUDBaseViewController.m */; };
 		1786A1882092D95D004EF1A7 /* FUDSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1786A1872092D95D004EF1A7 /* FUDSettingsViewController.m */; };
 		1786A18C20930473004EF1A7 /* FUDNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1786A18B20930473004EF1A7 /* FUDNetworkManager.m */; };
+		1786A1A720941F5C004EF1A7 /* FUDDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 1786A1A620941F5C004EF1A7 /* FUDDomain.m */; };
+		1786A1AA20942374004EF1A7 /* FUDServerEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1786A1A920942374004EF1A7 /* FUDServerEnvironment.m */; };
 		17DF4DD02074B65600833F66 /* FUDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DF4DCF2074B65600833F66 /* FUDLoginViewController.m */; };
 		17DF4DD32074B68700833F66 /* FUDRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DF4DD22074B68700833F66 /* FUDRegisterViewController.m */; };
 		17DF4DD62074C6AA00833F66 /* FUDBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DF4DD52074C6AA00833F66 /* FUDBaseNavigationController.m */; };
@@ -46,6 +48,10 @@
 		1786A19E20941611004EF1A7 /* Settings-DebugDevelop.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Settings-DebugDevelop.plist"; sourceTree = "<group>"; };
 		1786A1A020941628004EF1A7 /* Settings-ReleaseTest.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Settings-ReleaseTest.plist"; sourceTree = "<group>"; };
 		1786A1A220941640004EF1A7 /* Settings-ReleaseProduction.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Settings-ReleaseProduction.plist"; sourceTree = "<group>"; };
+		1786A1A520941F5C004EF1A7 /* FUDDomain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUDDomain.h; sourceTree = "<group>"; };
+		1786A1A620941F5C004EF1A7 /* FUDDomain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUDDomain.m; sourceTree = "<group>"; };
+		1786A1A820942374004EF1A7 /* FUDServerEnvironment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUDServerEnvironment.h; sourceTree = "<group>"; };
+		1786A1A920942374004EF1A7 /* FUDServerEnvironment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUDServerEnvironment.m; sourceTree = "<group>"; };
 		17DF4DCE2074B65600833F66 /* FUDLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUDLoginViewController.h; sourceTree = "<group>"; };
 		17DF4DCF2074B65600833F66 /* FUDLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUDLoginViewController.m; sourceTree = "<group>"; };
 		17DF4DD12074B68700833F66 /* FUDRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUDRegisterViewController.h; sourceTree = "<group>"; };
@@ -125,6 +131,10 @@
 		1786A189209303EE004EF1A7 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				1786A1A520941F5C004EF1A7 /* FUDDomain.h */,
+				1786A1A620941F5C004EF1A7 /* FUDDomain.m */,
+				1786A1A820942374004EF1A7 /* FUDServerEnvironment.h */,
+				1786A1A920942374004EF1A7 /* FUDServerEnvironment.m */,
 				1786A18A20930473004EF1A7 /* FUDNetworkManager.h */,
 				1786A18B20930473004EF1A7 /* FUDNetworkManager.m */,
 			);
@@ -397,7 +407,9 @@
 				174058A0206E41C90083EB2D /* AppDelegate.m in Sources */,
 				1786A18C20930473004EF1A7 /* FUDNetworkManager.m in Sources */,
 				17DF4DD32074B68700833F66 /* FUDRegisterViewController.m in Sources */,
+				1786A1A720941F5C004EF1A7 /* FUDDomain.m in Sources */,
 				17ECD7C42091A63500FDD163 /* FUDHomeViewController.m in Sources */,
+				1786A1AA20942374004EF1A7 /* FUDServerEnvironment.m in Sources */,
 				17ECD7BC2091A38300FDD163 /* FUDTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +483,10 @@
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = /Users/lanfudong/Documents/MyProjects/FUDTemplate/FUDTemplate/FUDTemplatePrefixHeader.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUGTEST=1",
+					"COCOAPODS=1",
+				);
 				INFOPLIST_FILE = FUDTemplate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -546,6 +562,10 @@
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = /Users/lanfudong/Documents/MyProjects/FUDTemplate/FUDTemplate/FUDTemplatePrefixHeader.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUGPRODUCTION=1",
+					"COCOAPODS=1",
+				);
 				INFOPLIST_FILE = FUDTemplate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -621,6 +641,10 @@
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = /Users/lanfudong/Documents/MyProjects/FUDTemplate/FUDTemplate/FUDTemplatePrefixHeader.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUGDEVELOP=1",
+					"COCOAPODS=1",
+				);
 				INFOPLIST_FILE = FUDTemplate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -690,6 +714,10 @@
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = /Users/lanfudong/Documents/MyProjects/FUDTemplate/FUDTemplate/FUDTemplatePrefixHeader.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"RELEASEPRODUCTION=1",
+					"COCOAPODS=1",
+				);
 				INFOPLIST_FILE = FUDTemplate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -759,6 +787,10 @@
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = /Users/lanfudong/Documents/MyProjects/FUDTemplate/FUDTemplate/FUDTemplatePrefixHeader.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"RELEASETEST=1",
+					"COCOAPODS=1",
+				);
 				INFOPLIST_FILE = FUDTemplate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
